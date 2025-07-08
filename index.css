@@ -4,10 +4,13 @@ header{
 
     background-color: white;
     padding: 20px;
+    position: sticky;
+    top: 0;
     
     width: 100%;
     padding-left: 98px;
     gap: 50px;
+
 }
 
 header a{
@@ -20,7 +23,10 @@ header a{
     border-bottom: solid 2px black;
 }
 
-
+section{
+    display: flex;
+    flex-direction: row;
+}
 
 .btn-write{
     background-color: #5358db;
@@ -54,7 +60,9 @@ header a{
 #settings{
     display: flex;
     flex-direction: row;
-    padding:150px 100px;
+    padding:150px 100px 100px;
+    border-bottom: solid 1px gray;
+    gap:25px
 }
 
 .options{
@@ -62,15 +70,39 @@ header a{
     flex-direction: column;
     border-bottom: solid 1px gray;
     flex: auto;
-    margin-left: 24px;
-    padding: 25px;
+    /*margin-left: 24px;*/
+    padding-bottom: 20px;
 }
 
 .paragraph{
     flex:2;
 }
 
-
 p{
     font-size: 18px;
+}
+
+#typing-area{
+    /*margin-top: 98px;
+    margin-left: 98px;*/
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+}
+#typing-area div{
+    border: solid gray 1px;
+}
+
+select,
+select::picker(select){
+    appearance: base-select;
+}
+
+.dropdown{
+    width: auto;
+}
+
+#work-area{
+    gap:30px;
+    padding:98px;
 }
