@@ -53,3 +53,61 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+const buttons = document.querySelectorAll('.text-option');
+
+buttons.forEach(button => {
+    button.addEventListener('click', ()=>{
+        let command = button.dataset['element'];
+
+        if (command == 'createLink'){
+            let url = prompt('Enter link:', 'http://');
+            document.execCommand(command, false, url);
+        }
+        if (command == 'h1'){
+            console.log('h1');
+            document.execCommand('formatBlock', false, '<h1>');
+        }
+        if (command == 'h2'){
+            document.execCommand('formatBlock', false, '<h2>');
+        }
+
+        if (command == 'font-size-small'){
+            document.execCommand('fontSize', false, 1);
+        }
+        if (command == 'font-size-normal'){
+            document.execCommand('fontSize', false, 3);
+        }if (command == 'font-size-large'){
+            document.execCommand('fontSize', false, 5);
+        }
+        if (command == 'font-size-huge'){
+            document.execCommand('fontSize', false, 7);
+        }
+
+
+        else{
+        document.execCommand(command, false, null);
+        }
+    })
+})
+
+
+
+/*const bold_button = document.getElementsByClassName('text-option bold');
+
+
+console.log(bold_button);
+console.log(bold_button.item(0));*/
+
+
+
+/*bold_button.addEventListener('click', () =>{
+    console.log("1");
+    let a = window.getSelection();
+    console.log(a.toString());
+})*/
+
+
+/*const buttons = document.querySelectorAll('.text-option');
+console.log(buttons);*/
