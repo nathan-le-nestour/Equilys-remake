@@ -23,11 +23,6 @@ header a{
     border-bottom: solid 2px black;
 }
 
-section{
-    display: flex;
-    flex-direction: row;
-}
-
 .btn-write{
     background-color: #5358db;
     color: white;
@@ -65,6 +60,44 @@ section{
     background: linear-gradient(90deg, rgba(224, 247, 214, 1) 0%, rgba(221, 247, 246, 1) 100%);
 }
 
+.section-col{
+    display: flex;
+    flex-direction: column;
+    padding: 150px 100px 50px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.div-row-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-col-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.centered-container{
+    align-items: center;
+    text-align: center;
+}
+
+.txtSize-16{
+    font-size: 16px;
+}
+
+.icon{
+    width: 93px;
+    margin:50px;
+}
+
+.gap-40{
+    gap:40px;
+}
+
+
+
 .presentation p{
     font-size: 18px;
 }
@@ -72,7 +105,7 @@ section{
     font-family: Roboto;
 }*/
 
-#settings{
+.settings{
     display: flex;
     flex-direction: row;
     padding:150px 100px 100px;
@@ -132,6 +165,8 @@ select::picker(select){
 #work-area{
     gap:30px;
     padding:98px;
+    display: flex;
+    flex-direction: row;
 }
 
 
