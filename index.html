@@ -197,12 +197,44 @@
             <button class="btn-2">Convertir</button>
         </div>
 
-        <div>
+        <div style="flex: 1 1 0%">
             <div></div>
-            <div class="textStats"></div>
-            <div class="textStats"></div>
             <div class="textStats">
-                <h5>Niveau d'inclusivité de mon texte</h5>
+                <p class="textStats-title">Légende</p>
+                <p class="textStats-subtitle">visualisez les passage qui pourrait être plus inclusif</p>
+
+                <p class="textStats-statline red">Amélioration syntaxique</p>
+                <p class="textStats-statline green"> Reformulation lexicales</p>
+                <p class="textStats-statline purple">Biais de genre</p>
+            </div>
+            <div class="textStats">
+                <div style="display: flex; flex-direction: row; width: 100%;">
+                    <p class ="textStats-content">Mot trouvé</p>
+                    <p class ="textStats-content">0</p>
+                </div>
+                <div style="display: flex; flex-direction: row; width: 100%;">
+                    <p class ="textStats-content">Mot totals</p>
+                    <p class ="textStats-content">0</p>
+                </div>
+                
+                <div style="display: flex; flex-direction: row; width: 100%;">
+                    <p class ="textStats-content">Phrase</p>
+                    <p class ="textStats-content">0</p>
+                </div>
+
+                
+            </div>
+            <div class="textStats">
+                <div class="textStats-title">Niveau d'inclusivité de mon texte</div>
+                <div class="textStats-subtitle">Corrigez votre texte pour le rendre plus inclusif</div>
+                <div style="display: flex; flex-direction: column;">
+                    <div style="display: flex;">
+                        <span class ="textStats-content">Faible</span>
+                        <span class ="textStats-content" style="display: flex; justify-content: end !important;">Élevé</span>
+                    </div>
+                    <div class="quality-slider"></div>
+                </div>
+
             </div>
 
         </div>
