@@ -15,7 +15,7 @@ export function NavBar() {
 
   return (
     <header className="sticky top-0">
-      <nav className="flex items-center pl-24 py-5.5 gap-12">
+      <nav className="flex items-center pl-26.5 py-5.5 gap-15 bg-white">
         <Link href="/">
           <img
             src="https://equilys.vercel.app/assets/EQUILYS-AI-RVB-DEGRADE-NOIR2-7a24f71d.svg"
